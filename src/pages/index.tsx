@@ -16,18 +16,22 @@ const geistMono = Geist_Mono({
 export default function Home() {
  const [value, setValue]=useState("");
   return (
-    
-    <div className="grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
-      <main className="flex flex-col gap-[32px] row-start-2 items-center sm:items-start">
-     <h1>PayPal</h1>
+     <div className="grid grid-rows-[20px_1fr_20px] text-center items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+   
+      <main className="border p-2 rounded  h-[600px] w-[450px] flex flex-col row-start-2 text-center items-center ">
+
+     <h1 className="pt-[30px] font-bold">PayPal</h1>
      <input 
      type="text" 
      placeholder="Email"
-     value={valor}
+     value={value}
      onChange={(e)=>setValue(e.target.value)}
-     className="border p-2 rounded"
+     className="border p-2 rounded w-[350px] mt-[60]"
      />
-
+     <a className="color-blue ">Forget Emaiil?</a>
+     <button className="bg-blue-600  mt-[40] cursor-pointer p-2 rounded-[30px] w-[350px]">Next</button>
+      <hr className="my-4 border-gray-400" />
+      <button className="border-[3px] cursor-pointer p-2 rounded-[30px] w-[350px]">Sign Up</button>
      </main>
     
     </div>
