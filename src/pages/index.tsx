@@ -16,9 +16,9 @@ const geistMono = Geist_Mono({
 export default function Home() {
  const [value, setValue]=useState("");
   return (
-     <div className="flex ml-0 mr-0 mt-auto mb-auto items-center justify-items-center min-h-screen ">
+     <div className=" min-h-screen ">
    
-      <main className="border p-2 rounded  h-[600px] w-[450px] flex flex-col row-start-2 text-center items-center ">
+      <main className="border p-2 rounded-[10] ml-auto mr-auto mt-[70]   h-[600px] w-[450px] flex flex-col row-start-2 text-center items-center ">
 
      <h1 className="pt-[30px] font-bold">GPay</h1>
      <input 
@@ -28,12 +28,18 @@ export default function Home() {
      onChange= {(e)=>setValue(e.target.value)}
      className="border p-2 rounded w-[350px] mt-[60]"
      />
-     <a className="color-blue ">Forget Emaiil?</a>
-     <button className="bg-blue-600  mt-[40] cursor-pointer p-2 rounded-[30px] w-[350px]">Next</button>
+     <a href="#" className="text-[#1161ca] text-start font-semibold">Forget Email?</a>
+     <button className="bg-[#1161ca] text-white-600  mt-[40] cursor-pointer p-2 rounded-[30px] w-[350px]">Next</button>
       <hr className="my-4 border-red-800" />
       <button className="border-[3px] cursor-pointer p-2 rounded-[30px] w-[350px]">Sign Up</button>
      </main>
-    <><li></li><li></li><li>PoliceUpdate</li><li>Worldwide</li></>
+    <ul className="flex mt-[40] justify-center align-center text-center ">
+      <li className="p-[4]">Contact Us</li>
+      <li className="p-[4]">Privacy</li>
+     <li className="p-[4]"> Legal</li>
+      <li className="p-[4]">PoliceUpdate</li>
+      <li className="p-[4]">Worldwide</li>
+      </ul>
     </div>
   );
 }
