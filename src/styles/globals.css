@@ -20,6 +20,9 @@
 }
 */
 body {
+  margin:0;
+  boxmodel:border-box;
+  padding:0;
   background: var(--background);
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;

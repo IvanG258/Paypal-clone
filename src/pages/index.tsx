@@ -16,7 +16,7 @@ const geistMono = Geist_Mono({
 export default function Home() {
  const [value, setValue]=useState("");
   return (
-     <div className="flex  items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20">
+     <div className="flex ml-0 mr-0 mt-auto mb-auto items-center justify-items-center min-h-screen ">
    
       <main className="border p-2 rounded  h-[600px] w-[450px] flex flex-col row-start-2 text-center items-center ">
 
@@ -33,7 +33,7 @@ export default function Home() {
       <hr className="my-4 border-red-800" />
       <button className="border-[3px] cursor-pointer p-2 rounded-[30px] w-[350px]">Sign Up</button>
      </main>
-    
+    <><li></li><li></li><li>PoliceUpdate</li><li>Worldwide</li></>
     </div>
   );
 }
