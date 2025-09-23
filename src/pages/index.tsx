@@ -13,6 +13,10 @@ const geistMono = Geist_Mono({
 //fim de definicao das fontes
 
 export default function Home() {
+  const English="English"
+const Spanish="Spanish"
+const Deutsch="Deutsch"
+const Francais="Francais";
  const [value, setValue]=useState("");
   return (
      <div className=" ">
@@ -20,13 +24,14 @@ export default function Home() {
       <main className="border border-gray-500 p-2 rounded-[10] ml-auto mr-auto mt-[100]   h-[600] w-[450] flex flex-col  items-center ">
 
      <h1 className="pt-[30px] text-center font-bold">GPay</h1>
-     <input 
+     <form>
+      <input 
      type="text" 
      autoComplete="email"
      placeholder="Email or username"
      value={value}
      onChange= {(e)=>setValue(e.target.value)}
-     className="border focus:border-[#1161ca] focus:outline-[#1161ca] placeholder:font-semibold p-2 rounded w-[350] h-[65] mt-[60]"
+     className="border focus:border-[#1161ca] placeholder:text-sm focus:outline-[#1161ca] placeholder:font-semibold p-2 rounded w-[350] h-[65] mt-[60]"
      />
      <a href="#" className="mt-[10] text-[#1161ca] ml-[50] self-start font-semibold">Forget Email?</a>
      <button className="bg-[#1161ca] text-white font-semibold  h-[50] mt-[40] cursor-pointer p-2 rounded-[30px] w-[350px]">Next</button>
@@ -39,11 +44,12 @@ export default function Home() {
     
     <ul className="flex mt-[90] justify-center text-sm items-center text-center">
       <li className="px-[7]"><select className="border-none"><option>US</option></select></li>
-      <li className="px-[7] ">English</li>
-     <li className="px-[7] border-l-[2]  border-gray-400  "> Spanish</li>
-      <li className="px-[7] border-l-[2]  border-gray-400 ">Francais</li>
-      <li className="px-[7] border-l-[2]  border-gray-400 ">Deutsch</li>
+      <li className="px-[7] ">{English}</li>
+     <li className="px-[7] border-l-[2]  border-gray-400 "> {Spanish}</li>
+      <li className="px-[7] border-l-[2]  border-gray-400 ">{Francais}</li>
+      <li className="px-[7] border-l-[2]  border-gray-400 ">{Deutsch}</li>
       </ul>
+      </form>
     
      </main>
     <ul className="flex mt-[40] justify-center align-center font-semibold text-sm text-center ">
