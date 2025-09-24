@@ -50,8 +50,9 @@ const Francais="Francais";
       <li className="px-[7] border-l-[2]  border-gray-400 ">{Deutsch}</li>
       </ul>
       </form>
-    
+     
      </main>
+
     <ul className="flex mt-[40] justify-center align-center font-semibold text-sm text-center ">
       <li className="p-[4]">Contact Us</li>
       <li className="p-[4]">Privacy</li>
